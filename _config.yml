@@ -1,6 +1,7 @@
 url: "https://ohrite.github.io"
 baseurl: /mobilization
 title: National Mobilization for Reproductive Justice
+future: true
 
 plugins:
   - jekyll-postcss
