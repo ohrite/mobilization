@@ -38,6 +38,7 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      brand: colors.rose,
     }),
     columns: {
       auto: 'auto',
