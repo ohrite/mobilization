@@ -1890,8 +1890,8 @@ select {
          column-gap: 1.5rem;
   }
 
-  .sm\:gap-y-12 {
-    row-gap: 3rem;
+  .sm\:gap-y-4 {
+    row-gap: 1rem;
   }
 
   .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
