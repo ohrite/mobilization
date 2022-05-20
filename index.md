@@ -1,8 +1,13 @@
 ---
 layout: default
-title: "Happy Jekylling!"
 ---
 
-## You're ready to go!
-
-Start developing your Jekyll website.
+{% include hero.html %}
+{% include program.html %}
+{% include events.html %}
+{% include newsletter.html %}
+{% include organizing.html %}
+{% include donate.html %}
+{% include endorsements.html %}
+{% include endorse.html %}
+{% include footer.html %}

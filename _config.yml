@@ -1,6 +1,6 @@
-url: "https://ohrite.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ohrite.github.io"
 baseurl: /mobilization
-title: Mobilization
+title: National Mobilization for Reproductive Justice
 
 plugins:
   - jekyll-postcss
