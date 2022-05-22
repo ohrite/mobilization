@@ -23,7 +23,6 @@ favicon:
 
 plugins:
   - jekyll-archives
-  - jekyll-favicon
   - jekyll-last-modified-at
   - jekyll-postcss
   - jekyll-seo-tag
