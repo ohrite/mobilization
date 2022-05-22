@@ -3,10 +3,59 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    {% seo %}
+    {% favicon %}
   </head>
   <body>
-    {{ content }}
+    {% include hero.html %}
+    {% include events.html %}
+    {% include newsletter.html %}
+    <main id="about" class="py-16 bg-gray-50 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
+        <div class="text-base max-w-prose mx-auto lg:max-w-none">
+          <h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Help build this effort and spread the word!</h2>
+        </div>
+        <div class="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
+          <p class="text-lg text-gray-500">We need to raise a powerful outcry to show the justices that reproductive justice cannot be denied! It is urgent to act, speak out, and educate about how abortion is a life-and-death health issue, a question of economic justice, and a basic human right. Join the movement to defend the right of women and all people to control their own bodies.</p>
+        </div>
+        <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
+          <div class="relative z-10">
+            <div class="prose prose-brand text-gray-500 mx-auto lg:max-w-none">
+              <p>What we call for:</p>
+              <ul role="list">
+                <li>Protect & expand Roe v. Wade; safe, legal abortion on demand without apology</li>
+                <li>Repeal the Hyde Amendment</li>
+                <li>Overturn state barriers to reproductive choices</li>
+                <li>Stop forced sterilization</li>
+                <li>No to caged kids, forced assimilation, & child welfare abuses</li>
+                <li>End medical & environmental racism; for universal healthcare</li>
+                <li>Defend queer & trans families</li>
+                <li>Guarantee medically sound sex education & affordable childcare</li>
+                <li>Sexual self-determination for people with disabilities</li>
+                <li>Uphold social progress with expanded voting rights & strong unions</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
+            <div class="relative pt-60 pb-10 rounded-2xl shadow-xl overflow-hidden">
+              <img class="absolute inset-0 h-full w-full object-cover" src="{{ "assets/images/2021-10-08-demo.jpeg" | absolute_url }}" alt="">
+              <div class="absolute inset-0 bg-gray-500 mix-blend-multiply"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-600 via-brand-600 opacity-90"></div>
+              <div class="relative px-8 md:flex-grow prose prose-brand text-white">
+                {{ content }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    {% include organizing.html %}
+    {% include donate.html %}
+    {% include endorsements.html %}
+    {% include contact.html %}
+    {% include press.html %}
+    {% include resources.html %}
+    {% include footer.html %}
   </body>
 </html>

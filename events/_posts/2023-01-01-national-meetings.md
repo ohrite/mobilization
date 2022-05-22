@@ -1,7 +1,7 @@
 ---
 title: National Mobilization Organizing Call
-category: Nationwide
-image: https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80
+tag: Nationwide
+image: assets/images/desktop.jpeg
 day: Sunday, May 22, 2022
 time: 3:00pm PDT / 6:00pm EDT
 ---

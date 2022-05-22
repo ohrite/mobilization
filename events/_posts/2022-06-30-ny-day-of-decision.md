@@ -1,7 +1,7 @@
 ---
 title: Day of Decision Action
-category: New York
-image: assets/images/2022-05-14-leon-kunstenaar-march.jpg
+tag: New York
+image: assets/images/2022-05-14-nyc-march.jpeg
 day: Spring 2022
 time: 5:00pm EDT
 ---

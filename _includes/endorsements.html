@@ -1,235 +1,24 @@
-<div class="bg-gray-50">
+<aside class="bg-gray-50" aria-label="Endorsements">
   <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-3xl font-extrabold text-gray-900">Endorsed by groups like yours</h2>
       <p class="mt-4 text-lg text-gray-500">The National Mobilization for Reproductive Justice was initiated by Radical Women, and we’re endorsed by likeminded groups around the country.</p>
     </div>
-    <dl class="mt-12 space-y-3 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-4 lg:grid-cols-4 lg:gap-x-8">
+    <dl class="mt-12 space-y-3 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-3 lg:grid-cols-3 lg:gap-x-8">
+      {% for endorsement in site.data.endorsements %}
       <div class="relative">
         <dt>
           <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
           </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">American Federation of Government Employees Local 3197</a>
+          {% if endorsement["URL"] %}
+          <a href="{{ endorsement["URL"] }}" class="block ml-9 text-lg leading-6 font-medium text-gray-900">{{ endorsement["Name"] }}</a>
+          {% else %}
+          <p class="ml-9 text-lg leading-6 font-medium text-gray-900">{{ endorsement["Name"] }}</p>
+          {% endif %}
         </dt>
       </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Central Phoenix NOW – Inez Casiano</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Communication Workers of America Local 7800</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Downtown Women for Change</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Freedom Socialist Party</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Fuerza Mundial Global</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Gender Justice League</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Georgia NOW</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Her Heart Beats too</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Metro Justice</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">New Mexico Religious Coalition for Reproductive Choice</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Newark Education Workers Caucus</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Oregon Coalition of Black Trade Unionists</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Organized Workers for Labor Solidarity</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Phoenix Democratic Socialists of America</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">American Party of LAbor – Pacific NW & IL Chapters</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Raging Grannies Action League</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Seattle NOW</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">South Dakota NOW</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Trabajadoras por la Paz</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">United Auto Workers Local 4121</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Unitarian Universalists of San Francisco Human Rights Working Group</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Washington Federation of State Employees Local 304</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Washington State Federation of Democratic Women</a>
-        </dt>
-      </div>
-      <div class="relative">
-        <dt>
-          <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <!-- Heroicon name: outline/check -->
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <a href="http://example.org" class="block ml-9 text-lg leading-6 font-medium text-gray-900">Women2Women Phoenix</a>
-        </dt>
-      </div>
+      {% endfor %}
     </dl>
   </div>
-</div>
+</aside>

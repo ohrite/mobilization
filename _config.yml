@@ -1,10 +1,58 @@
-url: "https://ohrite.github.io"
+url: https://ohrite.github.io
 baseurl: /mobilization
 title: National Mobilization for Reproductive Justice
+description: Join the movement to defend the right of women and all people to control their own bodies.
 future: true
+logo: favicon.png
+
+twitter:
+  username: radicalwomenus
+  card: summary
+
+facebook:
+  page: 18213462909
+
+social:
+  name: National Mobilization for Reproductive Justice
+  links:
+    - https://twitter.com/radicalwomenus
+    - https://www.facebook.com/RadicalWomenUS
+
+favicon:
+  source: assets/images/no-hangers.svg
 
 plugins:
+  - jekyll-archives
+  - jekyll-favicon
+  - jekyll-last-modified-at
   - jekyll-postcss
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 postcss:
   cache: false
+
+defaults:
+  - scope:
+      path: assets/**/*.pdf
+    values:
+      sitemap: false
+  - scope:
+      path: events/**/*.md
+    values:
+      sitemap: false
+  - scope:
+      path: press/**/*.md
+    values:
+      sitemap: false
+  - scope:
+      path: resources/**/*.md
+    values:
+      sitemap: false
+
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'

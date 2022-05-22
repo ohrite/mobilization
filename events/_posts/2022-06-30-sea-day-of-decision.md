@@ -1,6 +1,6 @@
 ---
 title: Day of Decision Action
-category: Seattle
+tag: Seattle
 image: assets/images/2022-05-14-sea-march.jpg
 day: Spring 2022
 time: 5:00pm PDT

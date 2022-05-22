@@ -1,7 +1,7 @@
 ---
 title: Day of Decision Action
-category: Phoenix
-image: assets/images/2022-05-14-sea-march.jpg
+tag: Phoenix
+image: assets/images/2022-02-28-phx-march.jpg
 day: Spring 2022
 time: 7:00pm MST
 ---

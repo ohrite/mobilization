@@ -1,6 +1,6 @@
 ---
 title: Day of Decision Action
-category: San Francisco
+tag: San Francisco
 image: assets/images/2022-05-04-sf-march.jpg
 day: Spring 2022
 time: 5:00pm PDT
