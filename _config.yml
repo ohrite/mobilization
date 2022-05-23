@@ -45,6 +45,10 @@ defaults:
       path: resources/**/*.md
     values:
       sitemap: false
+  - scope:
+      path: labor_involvement/**/*.md
+    values:
+      sitemap: false
 
 jekyll-archives:
   enabled:

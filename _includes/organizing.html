@@ -3,15 +3,17 @@
     <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
       <h2 class="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl">Organizing tools you can use today</h2>
       <dl class="mt-6 space-y-4 divide-y divide-gray-200">
-        <div class="pt-4">
-          <dt class="text-left w-full flex justify-between items-start text-gray-400">
-            <span class="font-medium text-gray-900">Write a letter to the justices using our sample letter</span>
-            <span class="ml-6 h-5 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </span>
-          </dt>
+        <div>
+          <a href="{{ "assets/pdfs/Letter-to-court-May-3-2022.pdf" | absolute_url }}" class="block pt-4">
+            <dt class="text-left w-full flex justify-between items-start text-gray-400">
+              <span class="font-medium text-gray-900">Write a letter to the justices using our sample letter</span>
+              <span class="ml-6 h-5 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </span>
+            </dt>
+          </a>
           <dd class="mt-2 pr-12 text-gray-500">
             <p>Mailing address:</p>
             <p>Supreme Court of the United States</p>
@@ -20,82 +22,18 @@
           </dd>
         </div>
 
-        <div class="pt-4">
+        {% for resource in site.data.organizing %}
+        <a href="{{ resource["URL"] | absolute_url }}" class="block pt-4">
           <dt class="text-left w-full flex justify-between items-start text-gray-400">
-            <span class="font-medium text-gray-900">Send a message via the US Supreme Court website</span>
+            <span class="font-medium text-gray-900">{{ resource["Name"] }}</span>
             <span class="ml-6 h-5 flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
             </span>
           </dt>
-        </div>
-
-        <div class="pt-4">
-          <dt class="text-left w-full flex justify-between items-start text-gray-400">
-            <span class="font-medium text-gray-900">Check out our Reproductive Justice toolkit for inspiration</span>
-            <span class="ml-6 h-5 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </span>
-          </dt>
-        </div>
-
-        <div class="pt-4">
-          <dt class="text-left w-full flex justify-between items-start text-gray-400">
-            <span class="font-medium text-gray-900">Get your union in the fight for reprodutive justice</span>
-            <span class="ml-6 h-5 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </span>
-          </dt>
-        </div>
-
-        <div class="pt-4">
-          <dt class="text-left w-full flex justify-between items-start text-gray-400">
-            <span class="font-medium text-gray-900">Leaflet: Abortion Myths & Realities</span>
-            <span class="ml-6 h-5 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </span>
-          </dt>
-        </div>
-
-        <div class="pt-4">
-          <dt class="text-left w-full flex justify-between items-start text-gray-400">
-            <span class="font-medium text-gray-900">Leaflet: No Going Back on Abortion Rights!</span>
-            <span class="ml-6 h-5 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </span>
-          </dt>
-        </div>
-
-        <div class="pt-4">
-          <dt class="text-left w-full flex justify-between items-start text-gray-400">
-            <span class="font-medium text-gray-900">Color posters for our 10 demands</span>
-            <span class="ml-6 h-5 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </span>
-          </dt>
-        </div>
-
-        <div class="pt-4">
-          <dt class="text-left w-full flex justify-between items-start text-gray-400">
-            <span class="font-medium text-gray-900">Suggested chants for demonstrations and marches</span>
-            <span class="ml-6 h-5 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </span>
-          </dt>
-        </div>
+        </a>
+        {% endfor %}
       </dl>
     </div>
   </div>
