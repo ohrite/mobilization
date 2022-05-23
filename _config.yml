@@ -18,9 +18,6 @@ social:
     - https://twitter.com/radicalwomenus
     - https://www.facebook.com/RadicalWomenUS
 
-favicon:
-  source: assets/images/no-hangers.svg
-
 plugins:
   - jekyll-archives
   - jekyll-last-modified-at
