@@ -37,6 +37,7 @@ social:
 plugins:
   - jekyll-archives
   - jekyll-last-modified-at
+  - jekyll-minifier
   - jekyll-postcss
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -65,6 +66,10 @@ defaults:
       path: labor_involvement/**/*.md
     values:
       sitemap: false
+
+jekyll-minifier:
+  exclude:
+    - '*.config.js'
 
 jekyll-archives:
   enabled:
