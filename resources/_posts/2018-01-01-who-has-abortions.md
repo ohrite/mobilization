@@ -1,6 +1,6 @@
 ---
 title: Who has abortions in the U.S.?
-link: https://digitalcollections.wesleyan.edu/object/ir-133
+link: https://www.guttmacher.org/fact-sheet/induced-abortion-united-states
 ---
 
 Eighteen percent of pregnancies (excluding miscarriages) in 2017 ended in abortion.

@@ -5,4 +5,4 @@ link: https://www.kiro7.com/news/local/video-hundreds-march-seattle-may-day/22cd
 cta: Watch video
 ---
 
-VIDEO: Hundreds march in Seattle on May Day
+Hundreds march in Seattle on May Day in this video from KIRO7
