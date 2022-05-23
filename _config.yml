@@ -5,6 +5,22 @@ description: Join the movement to defend the right of women and all people to co
 future: true
 logo: favicon.png
 
+forms:
+  newsletter:
+    url: https://docs.google.com/forms/d/e/1FAIpQLSdnIpE2mlhieRnpUTK2KQM3bglCYdK1dlLxmYE6nNES4f4omw/formResponse
+    fields:
+      email: entry.859380513
+  endorsement:
+    url: https://docs.google.com/forms/u/1/d/e/1FAIpQLSclP5FezAcTEcYQyuU-f9i-50AvgciTDe8VPr5Cf7md3WzjKw/formResponse
+    fields:
+      email: entry.859380513
+      organization_name: entry.754769655
+      address: entry.1657888341
+      website: entry.1713845971
+      full_name: entry.1958360706
+      email_address: entry.1596241086
+      phone: entry.847401212
+
 twitter:
   username: radicalwomenus
   card: summary
