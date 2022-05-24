@@ -1,0 +1,10 @@
+---
+label: Index
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: file
+  name: image
+  label: image

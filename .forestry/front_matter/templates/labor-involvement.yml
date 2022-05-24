@@ -1,0 +1,23 @@
+---
+label: Labor Involvement
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
+- type: text
+  name: tag
+  label: tag
+  config:
+    required: true
+  default: Nationwide
+- type: text
+  name: link
+  label: link
+  config:
+    required: true
+- type: text
+  name: cta
+  label: cta

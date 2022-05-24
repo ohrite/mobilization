@@ -1,0 +1,46 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: ''
+webhook_url: 
+sections:
+- type: directory
+  path: events/_posts
+  label: Events
+  create: documents
+  match: "**/*"
+- type: directory
+  path: press/_posts
+  label: Press
+  create: documents
+  match: "**/*"
+- type: directory
+  path: resources/_posts
+  label: Resources
+  create: documents
+  match: "**/*"
+- type: directory
+  path: labor_involvement/_posts
+  label: Labor Involvement
+  create: documents
+  match: "**/*"
+  templates:
+  - labor-involvement
+- type: jekyll-pages
+  label: Pages
+  create: all
+upload_dir: assets/images
+public_path: "/assets/images"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":year:-:month:-:day:-:filename:"
+build:
+  preview_env:
+  - JEKYLL_ENV=production
+  preview_output_directory: _site
+  install_dependencies_command: bundle install --path vendor/bundle && npm install
+  preview_docker_image: forestryio/ruby:2.6-node12
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: bundle exec jekyll serve --config _config.yml,_config_staging.yml
+    --drafts --unpublished --future --port 8080 --host 0.0.0.0 -d _site

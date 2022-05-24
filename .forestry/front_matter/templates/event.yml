@@ -1,0 +1,27 @@
+---
+label: Event
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: text
+  name: tag
+  label: Location
+  config:
+    required: true
+  default: Nationwide
+- type: file
+  name: image
+  label: Image
+  default: "/assets/images/desktop.jpeg"
+- type: text
+  name: day
+  label: Event date
+  config:
+    required: true
+- type: text
+  name: time
+  label: Event time
