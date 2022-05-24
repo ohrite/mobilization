@@ -23,7 +23,7 @@
         </div>
 
         {% for resource in site.data.organizing %}
-        <a href="{{ resource["URL"] | absolute_url }}" class="block pt-4">
+        <a href="{{ resource["URL"] | relative_url }}" class="block pt-4">
           <dt class="text-left w-full flex justify-between items-start text-gray-400">
             <span class="font-medium text-gray-900">{{ resource["Name"] }}</span>
             <span class="ml-6 h-5 flex items-center">
