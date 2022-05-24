@@ -25,3 +25,5 @@ fields:
 - type: text
   name: time
   label: Event time
+pages:
+- events/_posts/san-francisco-organizing-call.md
